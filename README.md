@@ -6,13 +6,13 @@ This project is demo project for spring-stream.
 Main points which will be shown is following:
 
 - How to produce messages to kafka topic
-- How top consume messages from kafka topic - TODO
+- How top consume messages from kafka topic
 - How to delete messages from kafka topic - TODO
 - How to easies go through all messages in topic - TODO
 
 ## Kafka topic in use
 
-1. **test**
+1. **testtock**
 
 ### Example of kafka commands for message consumer
  
