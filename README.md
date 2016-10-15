@@ -12,7 +12,7 @@ Main points which will be shown is following:
 
 ## Kafka topic in use
 
-1. **test**
+1. **testtock**
 
 ### Example of kafka commands for message consumer
  
