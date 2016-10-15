@@ -26,6 +26,7 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- spring-stream -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-stream</artifactId>
