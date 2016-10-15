@@ -7,11 +7,15 @@ import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.format.datetime.DateFormatter;
 import org.springframework.integration.annotation.InboundChannelAdapter;
 import org.springframework.integration.annotation.Poller;
 import org.springframework.integration.core.MessageSource;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Slf4j
 @Configuration
@@ -24,7 +28,7 @@ public class KafkaConfig {
         return new MessageSource<String>() {
             @Override
             public Message<String> receive() {
-                return MessageBuilder.withPayload(String.format("System time: %d", System.currentTimeMillis()))
+                return MessageBuilder.withPayload((new SimpleDateFormat("dd/mm/yyyy-HH:mm:ss").format(new Date())))
                         .build();
             }
         };
